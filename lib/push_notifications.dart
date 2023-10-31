@@ -14,8 +14,6 @@ Future _firebaseBackgroundMessage(RemoteMessage message) async {
   }
 }
 
-
-
 class PushNotifications {
   static final _firebaseMessaging = FirebaseMessaging.instance;
   static final FlutterLocalNotificationsPlugin

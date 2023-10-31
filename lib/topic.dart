@@ -19,10 +19,10 @@ class _TopicSubscriptionScreenState extends State<TopicSubscriptionScreen> {
     super.initState();
 
     // When the app is in the foreground and receives a notification.
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      print('Message received when the app is in the foreground:');
-      print('Title: ${message.notification?.title}');
-      print('Body: ${message.notification?.body}');
+    // FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+    //   print('Message received when the app is in the foreground:');
+    //   print('Title: ${message.notification?.title}');
+    //   print('Body: ${message.notification?.body}');
 
       // FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       //   RemoteNotification? notification = message.notification;
@@ -53,15 +53,15 @@ class _TopicSubscriptionScreenState extends State<TopicSubscriptionScreen> {
       //     );
       //   }
       // });
-    });
+    // });
     // When the user taps on a notification and the app is opened.
-    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      print('Message opened from system tray:');
-      print('Title: ${message.notification?.title}');
-      print('Body: ${message.notification?.body}');
-
-      // Add any additional logic for handling the opened notification.
-    });
+    // FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+    //   print('Message opened from system tray:');
+    //   print('Title: ${message.notification?.title}');
+    //   print('Body: ${message.notification?.body}');
+    //
+    //   // Add any additional logic for handling the opened notification.
+    // });
   }
 
   @override
